@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="form" id="search-form">
+          <input
+            class="enter-city"
+            id="search-input"
+            type="search"
+            placeholder="Enter a city.."
+            required
+          />
+          <input
+            class="search-button"
+            type="submit"
+            id="search-submit-button"
+            value="Search"
+          />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div class="current-city">
+            <h1 class="current-city-name" id="current-city-display">Paris</h1>
+            <p class="current-city-details">
+              <span id="current-time">Saturday 15:32</span>, moderate rain
+              <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h </strong>
+            </p>
+          </div>
+          <div class="current-temp">
+            <span class="current-temp-emoji" id="current-temp-emoji-display"
+              >☀️</span
+            >
+            <span class="current-temp-number" id="current-temp-number-display"
+              >14</span
+            >
+            <span class="current-temp-degree" id="current-temp-degree-display"
+              >°C</span
+            >
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Lindsey Flatt</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
