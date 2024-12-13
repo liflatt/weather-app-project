@@ -56,7 +56,7 @@ function search(event) {
   let city = `${searchInput.value}`;
 
   let apiKey = "b0452f91cd75631eoba398t0f42a2100";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
 
   axios.get(apiUrl).then(currentWeather);
 }
