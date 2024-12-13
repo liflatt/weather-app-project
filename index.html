@@ -39,21 +39,25 @@
           <div class="current-city">
             <h1 class="current-city-name" id="current-city-display">Paris</h1>
             <p class="current-city-details">
-              <span id="current-time">Saturday 15:32</span>, moderate rain
+              <span id="current-time">Saturday 15:32</span>,
+              <span id="description">moderate rain</span>
               <br />
-              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h </strong>
+              Humidity: <strong><span id="humidity">87%</span></strong> , Wind:
+              <strong><span id="wind">7.2</span></strong>
             </p>
           </div>
           <div class="current-temp">
-            <span class="current-temp-emoji" id="current-temp-emoji-display"
-              >☀️</span
-            >
-            <span class="current-temp-number" id="current-temp-number-display"
-              >14</span
-            >
-            <span class="current-temp-degree" id="current-temp-degree-display"
-              >°C</span
-            >
+            <div class="current-temp-emoji" id="current-temp-emoji-display">
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
+              />
+            </div>
+            <div class="current-temp-number" id="current-temp-number-display">
+              14
+            </div>
+            <div class="current-temp-degree" id="current-temp-degree-display">
+              °F
+            </div>
           </div>
         </div>
       </main>
