@@ -30,6 +30,7 @@ function currentWeather(response) {
   let humidity = response.data.temperature.humidity;
   let wind = response.data.wind.speed;
   let description = response.data.condition.description;
+  let icon = response.data.condition.icon_url;
 
   let temperatureElement = document.querySelector(
     "#current-temp-number-display"
@@ -37,11 +38,13 @@ function currentWeather(response) {
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
+  let iconElement = document.querySelector("#icon");
 
   temperatureElement.innerHTML = `${temperature}`;
   humidityElement.innerHTML = `${humidity}%`;
   windElement.innerHTML = `${wind} mph`;
   descriptionElement.innerHTML = `${description}`;
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temp-emoji" />`;
 }
 
 function search(event) {
